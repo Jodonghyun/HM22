@@ -1,21 +1,21 @@
-rpt02.html
+#rpt02.html
 header에는 hm22 홈페이지를 넣었다
 nav에는 topmenu에 대한 리스트를 작성하고, about me, top3 movie, top3 trip, society, x-mas를 추가하였다
 section에는 초기화면과 메인화면을 나타낼 창을 주었다.
 
-info.html
+#info.html
 hover를 사용하여 글자에 마우스를 올리면 크기와 색이 바뀌게 하였다.
 header에는 나의 정보 제목을 주었다.
 ul에 이름과 고향 등 정보를 주었다.
 href를 사용하여 나의 하루 보기를 클릭하면 my daily life.html로 이동하게 하였다.
 
-my daliy life.html
+#my daliy life.html
 마찬가지로 hover를 사용하여 글자에 마우스를 올리면 크기와 색이 바뀌게 하였다.
 header에는 my daliy life를 주었다.
 section에는 ul에 하루 일과를 주었다.
 href를 사용하여 이전으로를 클릭하면 info.html로 이동하게 하였다.
 
-movie.html
+#movie.html
 selectbox를 사용하여 영화를 선택하고 click버튼을 누르면 각 html로 이동하게 하였다.
 각 영화의 사진을 추가하고 자세히 보기를 누르면 각 html로 이동하게 하였다.
 href를 사용하여 메인을 클릭하면 info.html로 이동하게 하였다.
