@@ -1,4 +1,4 @@
-#rpt02.html
+## rpt02.html
 header에는 hm22 홈페이지를 넣었다
 nav에는 topmenu에 대한 리스트를 작성하고, about me, top3 movie, top3 trip, society, x-mas를 추가하였다
 section에는 초기화면과 메인화면을 나타낼 창을 주었다.
