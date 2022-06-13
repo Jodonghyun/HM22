@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+	<head>
+		<!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+		<meta charset="utf-8">
+		<title>hm22 : 나는 누구인가?</title>
+		<link rel="stylesheet" type="text/css" href="home.css">
+		<style>
+
+		</style>
+		<script>
+    var week = new Array('일', '월', '화', '수', '목', '금', '토');
+    var today = new Date();
+
+
+    function hm22nowtime(){
+		  var month,date,hours,minutes, seconds, ap,year,day;
+		  var intDate,intMon,intHours,intMinutes,intSeconds;
+		  var today=new Date();  
+          intYear = today.getFullYear();
+		  intDate = today.getDate();
+		  intMon = today.getMonth()+1;
+          intDay = today.getDay();
+		  intHours = today.getHours();
+		  intMinutes = today.getMinutes();
+		  intSeconds = today.getSeconds();  
+		  if(intMon < 10){ month = "0" + intMon; } 
+		  else { month = intMon; }
+		  if(intDate < 10){ date = "0" + intDate; } 
+		  else { date = intDate; }
+		  if (intHours == 0) { hours = "12:"; ap = "AM "; }
+		  
+		  else if (intHours < 12) { hours = intHours + ":"; ap = "AM "; } 
+		  else { intHours = (intHours - 12); hours =""+ intHours + ":"; ap = "PM "; }
+		  if (intMinutes < 10){ minutes = "0" + intMinutes + ":"; }
+		  else{ minutes = intMinutes + ":"; }
+		  if (intSeconds < 10){ seconds = "0" + intSeconds; }
+		  else{ seconds = intSeconds; }  
+		  document.getElementById("clock").innerHTML = ap+ hours + minutes + seconds  
+		  window.setTimeout("hm22nowtime()",1000);
+		  }
+		  window.onload=hm22nowtime
+
+          var hm22nalja = {
+
+            year: function() {
+              return today.getFullYear();
+            },
+            month: function() {
+              return today.getMonth() + 1;
+            },
+            date: function() {
+              return today.getDate();
+            }
+        }
+		</script>
+	</head>
+
+	<body>
+		<img id="picture" src="media/시간표.jpg" alt="시간표" width="300" height="500">
+		<script>
+			 function star1() {
+        var stars = confirm("HM22 의 Github로 이동하시겠습니까?");
+        return stars;
+    }
+    function star2() {
+        var stars = confirm("인제대학교 홈페이지로 이동하시겠습니까?");
+        return stars;
+    }
+    function star3() {
+        var stars = confirm("인제대학교 학식으로 이동하시겠습니까?");
+    }
+    function star4() {
+        var stars = confirm("인제정보시스템 사이트로 이동하시겠습니까?");
+        return stars;
+    }
+		</script>
+		<div class = "wrap">
+		<header>
+		<h1><a class="font1"  href="https://github.com/Jodonghyun/HM22" >hm22 홈페이지</a></h1>
+	    </header>
+		<nav id="topMenu">
+			<ul>
+			<li class="topMenuLi">
+			<a class="menuLink" href="hm22_info.html.html" target="right" >About me</a>
+			<ul class = "submenu">
+			<li><a href="hm22_My_daliy_life.html"target="right"  class="submenuLink">My daily</a>
+			  </ul>
+			  </li>
+			<li class="topMenuLi"> 
+				<a class="menuLink" href="hm22_movie.html" target="right" >TOP3 MOVIE</a>
+			<ul class = "submenu">
+			<li><a href="hm22_cheerleader.html"target="right"  class="submenuLink">TOP3 CHEERLEADER</a>
+			</li>
+			</ul>
+            	</li> 
+				<li class="topMenuLi"> 
+				<a class="menuLink" href="hm22_form.html" target="right" >Society</a> 
+				<ul class="submenu"> 
+					<li><a href="hm22_question.html" target="right" class="submenuLink">question</a>		
+					</li> 
+				</ul> 
+				</li> 
+				<li class="topMenuLi"> 
+				<a class="menuLink" href="hm22_card.html" target="right">X-MAS</a> 
+				</li>
+				<li class="topMenuLi"> 
+					<a class="menuLink" href="hm22_calc.html" target="right">Calculate</a> 
+					<ul class="submenu"> 
+					  <li><a href="hm22_math.html" class="submenuLink" target="right">GUGUDAN</a>
+					  </li> 
+					</ul> 
+					</li> 
+				</ul>
+				</nav>
+				<article align="center">
+					<iframe
+					style="border:20px ridge rgb(197, 248, 102)"
+					src="hm22_info.html.html"
+					name="right"
+					width="790"
+					height="650"
+				  ></iframe>
+				  <iframe name="main_area" src="" seamless="false" align="center" width="700px" height="100px" frameborder="0px" scrolling="no">
+
+				  </iframe>
+				
+				</article>
+				<aside hidden="440px">
+					<tr>
+					<p align="center">
+						<br>
+					<a href="https://github.com/Jodonghyun/HM22" tyle="colsor: rgb(105, 85, 143);">homepage</a><br>
+					</p>
+
+					</tr>
+				</aside>
+				<footer>
+					<strong><div id="clock"></div></strong>
+					<strong><div id="clock2"><script>
+						document.write(hm22nalja.year()+"년 " + hm22nalja.month()+"월 "+hm22nalja.date()+"일");
+						document.write(" "+week[today.getDay()] + "요일");
+					</script>
+					</div></strong>
+				</footer>
+			</div>
+
+		
+
+
+		<style>
+			.nav {
+				position: absolute;
+				top:170px;
+				left: 50px;
+			}
+			.multiEffect3 {
+				color:#333;
+			}
+			.aside {
+				position:absolute;
+				top:80px;
+				right:px;
+				width: 24.5%;
+            
+				background: #ffd51b;
+			}
+		</style>
+
+<aside class="aside">
+	<hr style="margin-top: -1px;">
+	<form>
+		<a class="" style="margin-left: 21px;"><strong>ID :</strong> </a> <input type="text" size="15" value=""><br>
+		<a style="margin-left: 14px;"><strong>PASSWORD :</strong> </a> <input type="password" size="15" value="">
+		<input style="color: black; margin-left: 5px;" type="button" value="로그인" size=10 onClick="location.href=''"><br>
+		<input style="margin-left: 12px;" type="checkbox" value="로그인" /><strong>자동 로그인</strong>
+		<hr>
+	</form>
+
+</aside>
+
+
+		</nav>
+		<nav class="nav">
+        <p class="multiEffect2" style="font-size: 23pt; text-align: center; font-weight: 1000;">즐겨찾기</p>
+        <a onclick="return star1()" class="multiEffect3" href="https://github.com/Jodonghyun/HM22" target="_blank" style="font-size: 20pt;"><strong>ㆍ HM22 Github</strong></a><br><br>
+        <a onclick="return star2()" class="multiEffect3" href="https://www.inje.ac.kr/kor/main/main.asp" target="_blank" style="font-size: 20pt;"><strong>ㆍ 인제대학교 홈페이지</strong></a><br><br>
+        <a onclick="return star3()" class="multiEffect3" href="https://www.inje.ac.kr/kor/Template/Bsub_page.asp?Ltype=5&Ltype2=3&Ltype3=3&Tname=S_Food&Ldir=board/S_Food&Lpage=s_food_view&d1n=5&d2n=4&d3n=4&d4n=0" target="_blank" style="font-size: 20pt;"><strong>ㆍ 인제대학교 학식</strong></a><br><br>
+        <a onclick="return star4()" class="multiEffect3" href="https://stud.inje.ac.kr/" target="_blank" style="font-size: 20pt;"><strong>ㆍ 인제정보시스템</strong></a><br><br>
+    </nav>
+	  
+</body>
+
+</html>
+
